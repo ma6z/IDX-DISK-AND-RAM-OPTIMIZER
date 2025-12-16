@@ -1,18 +1,25 @@
-# IDX-DISK-AND-RAM-OPTIMIZER
-IDX DISK AND RAM OPTIMIZER 
+IDX Disk and RAM Optimizer
 
-# NOTE BEFORE YOU RUN THESE CMDS PASTE THESE CMDS INSIDE THE WORKSPACE
-- cd
+⚠️ WARNING
+These commands permanently delete files and stop processes.
+Use only if you understand the impact.
+
+PRE-RUN (Workspace)
+- cd ~
 - ls
 - rm -rf flutter
 - rm -rf myapp
 
-DISK OPTIMIZER CMDS - 
+DISK OPTIMIZATION
+- rm -rf ~/.gradle   (Workspace)
+- rm -rf .emu        (VM only)
 
-# rm -rf ~/.gradle PASTE THIS IN THE WORKSPACE
-# rm -rf .emu PASTE THIS INSIDE THE VM
+RAM OPTIMIZATION
+- pkill -f nixd
+- pkill -f extensionHost
 
-RAM OPTIMIZER CMDS -
+Custom optimized dev.nix available in the repo.
 
-# pkill -f nixd PASTE THIS IN THE WORKSPACE
-# pkill -f extensionHost PASTE THIS IN THE WORKSPACE
+Credits: ZenxSpyke  
+Permission required for redistribution.  
+Discord: zenxspyke
